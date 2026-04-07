@@ -19,9 +19,10 @@
 
 <p align="center">
   <a href="https://api.thedailylesson.com">▶ Live Playground</a> ·
-  <a href="https://stackblitz.com/fork/github/nicoletterankin/kelly-intelligence/tree/master/examples/js">⚡ Open in StackBlitz</a> ·
-  <a href="https://api.thedailylesson.com/openapi.json">OpenAPI Spec</a> ·
-  <a href="https://api.thedailylesson.com/.well-known/ai-plugin.json">AI Plugin Manifest</a>
+  <a href="https://api.thedailylesson.com/integrations">⚙ Integrations (25+ tools)</a> ·
+  <a href="https://github.com/nicoletterankin/kelly-action">🤖 GitHub Action</a> ·
+  <a href="https://stackblitz.com/fork/github/nicoletterankin/kelly-intelligence/tree/master/examples/js">⚡ StackBlitz</a> ·
+  <a href="https://api.thedailylesson.com/openapi.json">OpenAPI Spec</a>
 </p>
 
 ---
@@ -167,10 +168,33 @@ for chunk in kelly.chat.completions.create(
     print(chunk["choices"][0]["delta"].get("content", ""), end="")
 ```
 
+## Use Kelly with your existing tools
+
+Kelly is OpenAI-compatible — drop it into anything that talks to OpenAI. Copy-paste configs for **25+ tools** at [api.thedailylesson.com/integrations](https://api.thedailylesson.com/integrations):
+
+- **Editors:** Cursor · Continue.dev · Cline · Aider · Zed · Roo
+- **SDKs:** Vercel AI SDK · LangChain · LlamaIndex · Pydantic AI · Instructor · CrewAI · Mastra
+- **Routers:** LiteLLM · Helicone · Portkey · Cloudflare AI Gateway · Langfuse
+- **UIs:** OpenWebUI · LibreChat · Chatbot UI
+- **CI:** [GitHub Action](https://github.com/nicoletterankin/kelly-action) · n8n · curl
+
+## AI Code Review on every PR
+
+Drop our [GitHub Action](https://github.com/nicoletterankin/kelly-action) into `.github/workflows/` and Kelly reviews every pull request:
+
+```yaml
+- uses: nicoletterankin/kelly-action@v1
+  with:
+    kelly-api-key: ${{ secrets.KELLY_API_KEY }}
+```
+
+Free for the first 500 PRs/month.
+
 ## API Reference
 
 - **OpenAPI 3.1 spec:** https://api.thedailylesson.com/openapi.json
 - **AI plugin manifest:** https://api.thedailylesson.com/.well-known/ai-plugin.json
+- **Integrations:** https://api.thedailylesson.com/integrations
 - **Docs:** https://api.thedailylesson.com
 
 ## Examples
