@@ -1,0 +1,21 @@
+{
+  "name": "kelly-intelligence",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible AI tutor SDK — 162K words, 47 languages, powered by Claude. Drop-in replacement for OpenAI.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "ai", "tutor", "education", "claude", "openai", "openai-compatible",
+    "vocabulary", "language-learning", "rag", "multilingual", "llm",
+    "chat", "completions", "streaming", "kelly", "anthropic"
+  ],
+  "author": "Lesson of the Day, PBC <nicolette@lotdpbc.com>",
+  "license": "MIT",
+  "homepage": "https://api.thedailylesson.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicoletterankin/kelly-intelligence"
+  },
+  "engines": { "node": ">=16" },
+  "files": ["index.js", "index.d.ts", "README.md"]
+}
