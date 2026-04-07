@@ -1,10 +1,44 @@
-# Kelly Intelligence
+<p align="center">
+  <a href="https://api.thedailylesson.com">
+    <img src="https://api.thedailylesson.com/og.svg" alt="Kelly Intelligence — OpenAI-compatible AI tutor API" width="640">
+  </a>
+</p>
 
-**OpenAI-compatible AI tutor API** — 162,000 words, 47 languages, powered by Claude.
+<h1 align="center">Kelly Intelligence</h1>
 
-Drop-in replacement for OpenAI. One line change. Automatic vocabulary RAG from 162K words across 47 languages, plus an opinionated AI tutor persona ("Kelly") trained on a 5-phase Socratic teaching method.
+<p align="center">
+  <strong>OpenAI-compatible AI tutor API.</strong> 162,000 words. 47 languages. Powered by Claude.
+</p>
+
+<p align="center">
+  <a href="https://api.thedailylesson.com"><img alt="Try it live" src="https://img.shields.io/badge/Try_it_live-no_signup-22c55e?style=for-the-badge"></a>
+  <a href="https://api.thedailylesson.com"><img alt="Free tier" src="https://img.shields.io/badge/Free-500_calls%2Fmo-3b82f6?style=for-the-badge"></a>
+  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-eab308?style=for-the-badge"></a>
+  <a href="https://api.thedailylesson.com/openapi.json"><img alt="OpenAPI 3.1" src="https://img.shields.io/badge/OpenAPI-3.1-6366f1?style=for-the-badge"></a>
+</p>
+
+<p align="center">
+  <a href="https://api.thedailylesson.com">▶ Live Playground</a> ·
+  <a href="https://stackblitz.com/fork/github/nicoletterankin/kelly-intelligence/tree/master/examples/js">⚡ Open in StackBlitz</a> ·
+  <a href="https://api.thedailylesson.com/openapi.json">OpenAPI Spec</a> ·
+  <a href="https://api.thedailylesson.com/.well-known/ai-plugin.json">AI Plugin Manifest</a>
+</p>
+
+---
+
+**Drop-in replacement for OpenAI.** Change one line — `base_url`. Get automatic vocabulary RAG from 162K words across 47 languages, plus an opinionated AI tutor persona ("Kelly") trained on a 5-phase Socratic teaching method.
 
 > Built by [Lesson of the Day, PBC](https://lotdpbc.com) — a public benefit corporation building learning infrastructure.
+
+## Try it in 10 seconds (no signup)
+
+```bash
+curl -X POST https://api.thedailylesson.com/v1/demo \
+  -H "Content-Type: application/json" \
+  -d '{"messages":[{"role":"user","content":"What does ephemeral mean?"}]}'
+```
+
+Streams a real Kelly response. 5 free demo calls per hour per IP, no key required. When you're ready for production, [grab a free key](https://api.thedailylesson.com) (500 calls/month).
 
 ## Why Kelly Intelligence?
 
